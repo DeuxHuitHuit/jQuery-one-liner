@@ -1,0 +1,30 @@
+{
+  "name": "jquery.one-liner",
+  "title": "jQuery One-Liner",
+  "description": "Makes the text \"fit\" on one line by changing the font-size or the letter-spacing values ",
+  "version": "1.0",
+  "homepage": "https://github.com/DeuxHuitHuit/jQuery-one-liner",
+  "author": {
+    "name": "Deux Huit Huit",
+    "url": "http://www.deuxhuithuit.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DeuxHuitHuit/jQuery-one-liner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeuxHuitHuit/jQuery-one-liner/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/DeuxHuitHuit/jQuery-one-liner/blob/master/LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.4",
+	"grunt": "~0.3.9",
+	"phantomjs" : "~1.5.0"
+  },
+  "keywords": []
+}
