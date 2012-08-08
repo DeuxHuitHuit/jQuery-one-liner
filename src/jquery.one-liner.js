@@ -90,7 +90,7 @@
 			var c = $(this);
 			
 			// make it large enough
-			c.width(100000000);
+			c.width(10000000);
 			
 			// reset font-size and letter spacing
 			c.css('font-size','');
