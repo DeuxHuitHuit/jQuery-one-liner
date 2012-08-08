@@ -11,9 +11,10 @@
 
 	var 
 	
-	fontSize = function (c) {
-		// get ratio for this child
-		var ratio = $.sdiv(t.width(), c.find(opts.wrapper+'.'+opts.wrapperClass).outerWidth(true));
+	fontSize = function (c, opts) {
+		var t = $(this),
+			// get ratio for this child
+			ratio = $.sdiv(t.width(), c.find(opts.wrapper+'.'+opts.wrapperClass).outerWidth(true));
 		
 		if (ratio !== 0 && ratio != null) {
 			var currentSize = c.css('font-size'),
@@ -25,10 +26,11 @@
 		}
 	},
 	
-	letterSpacing = function (c) {
-		// get the diff between the target and the child
-		var diff = t.width() - c.find(opts.wrapper+'.'+opts.wrapperClass).outerWidth(true),
-		// get the count of chars in the children
+	letterSpacing = function (c, opts) {
+		var t = $(this),
+			// get the diff between the target and the child
+			diff = t.width() - c.find(opts.wrapper+'.'+opts.wrapperClass).outerWidth(true),
+			// get the count of chars in the children
 			length = t.text().length;
 		
 		if (diff !== 0 && !isNaN(diff)) {
@@ -102,7 +104,7 @@
 			}
 			
 			// call the actual function
-			fx.call(t, c);
+			fx.call(t, c, opts);
 			
 			// reset width
 			c.css('width', '');
