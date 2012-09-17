@@ -112,6 +112,8 @@
 		
 		// reset container overflow
 		t.css('overflow','');
+		
+		return t;
 	};
 	
 	// ACTUAL PLUGINS
